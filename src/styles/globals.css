@@ -1,0 +1,97 @@
+.custom-swiper-pagination .swiper-pagination-bullet {
+  background-color: #58C4DC;
+  /* Change to your desired color */
+}
+
+.custom-swiper-pagination .swiper-pagination-bullet-active {
+  background-color: white;
+  /* Change to your desired active color */
+}
+
+@media (max-width: 768px) {
+  .image-container {
+    overflow-x: auto;
+    overflow-y: hidden;
+    /* Habilita desplazamiento en ambas direcciones */
+    display: flex;
+    gap: 10px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .image-container img {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    max-height: 100%;
+    border-radius: 8px;
+  }
+}
+
+body {
+  background-color: #000;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.scroller {
+  max-width: 70%;
+  max-height: 675px;
+}
+
+.scroller__inner {
+  padding-block: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.scroller__inner img {
+  width: 100px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.scroller__inner img:hover {
+  transform: scale(1.1);
+}
+
+.scroller[data-animated="true"] {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll var(--_animation-duration, 40s) var(--_animation-direction, forwards) linear infinite;
+}
+
+.scroller[data-direction="right"] {
+  --_animation-direction: reverse;
+}
+
+.scroller[data-direction="left"] {
+  --_animation-direction: forwards;
+}
+
+.scroller[data-speed="fast"] {
+  --_animation-duration: 20s;
+}
+
+.scroller[data-speed="slow"] {
+  --_animation-duration: 60s;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .scroller__inner img {
+    width: 100px;
+    height: auto;
+  }
+}
