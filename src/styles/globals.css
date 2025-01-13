@@ -91,7 +91,12 @@ body {
 
 @media screen and (max-width: 568px) {
   .scroller__inner img {
-    width: 100px;
+    width: 80px;
     height: auto;
+  }
+
+  .scroller {
+    max-width: 90%;
+    max-height: 675px;
   }
 }

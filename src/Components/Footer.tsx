@@ -1,6 +1,6 @@
 import React from 'react'
 import {Instagram, Linkedin, Github , Mail} from 'lucide-react'
-//@ts-ignore
+//@ts-expect-error valdra madres
 import navbar from "../assets/translations/navbar.js"
 
 interface FooterProps {
@@ -36,7 +36,7 @@ export default function Footer({ selectedLanguage }: FooterProps) {
                     {/* Navigation links */}
                     <nav className="hidden md:flex flex-wrap justify-center gap-4">
                         <a href="#" className="hover:text-[#FFD074] transition-colors duration-300">{t.home}</a>
-                        <a href="#projects" className="hover:text-[#FFD074] transition-colors duration-300">{t.projects}</a>
+                        <a href="/projects" className="hover:text-[#FFD074] transition-colors duration-300">{t.projects}</a>
                         <a href="#about" className="hover:text-[#FFD074] transition-colors duration-300">{t.about}</a>
                     </nav>
 

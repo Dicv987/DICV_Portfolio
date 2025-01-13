@@ -62,11 +62,11 @@ const navbar = {
       ImpresionCreativa: {
         name: "Impresion Creativa",
         description: "An integral solution for workorders and inventory management for a printing company.",
-        image: "assets/images/Imp Creativa/imp_creativa1.png",
+        image: "src/assets/images/Imp Creativa/imp_creativa1.png",
         images: [
-          "assets/images/Imp Creativa/imp_creativa2.png",
-          "assets/images/Imp Creativa/imp_creativa3.png",
-          "assets/images/Imp Creativa/imp_creativa4.png",
+          "src/assets/images/Imp Creativa/imp_creativa2.png",
+          "src/assets/images/Imp Creativa/imp_creativa3.png",
+          "src/assets/images/Imp Creativa/imp_creativa4.png",
         ],
         technologies: [
           { name: "Laravel", color: "#F0513F", icon: "devicon-laravel-original" },
@@ -79,11 +79,11 @@ const navbar = {
       Tooltrackup: {
         name: "Tooltrackup",
         description: "A fullstack WMS (Warehouse Management System) to track tools and equipment in university labs.",
-        image: "assets/images/ToolTrackUp/tooltrackup_1.png",
+        image: "src/assets/images/ToolTrackUp/tooltrackup_1.png",
         images: [
-          "assets/images/ToolTrackUp/tooltrackup_2.png",
-          "assets/images/ToolTrackUp/tooltrackup_3.png",
-          "assets/images/ToolTrackUp/tooltrackup_4.png"
+          "src/assets/images/ToolTrackUp/tooltrackup_2.png",
+          "src/assets/images/ToolTrackUp/tooltrackup_3.png",
+          "src/assets/images/ToolTrackUp/tooltrackup_4.png"
         ],
         technologies: [
           { name: "Laravel", color: "#F0513F", icon: "devicon-laravel-original" },
@@ -96,11 +96,11 @@ const navbar = {
       DataWarehouse: {
         name: "Data Bank Texe",
         description: "DataWarehouse to centralize information from 9 sales points across multiple brands, and custom dashboards for data visualization.",
-        image: "assets/images/Texe/texe_1.png",
+        image: "src/assets/images/Texe/texe_1.png",
         images: [
-          "assets/images/Texe/texe_2.png",
-          "assets/images/Texe/texe_3.png",
-          "assets/images/Texe/texe_4.png",
+          "src/assets/images/Texe/texe_2.png",
+          "src/assets/images/Texe/texe_3.png",
+          "src/assets/images/Texe/texe_4.png",
         ],
         technologies: [
           { name: "SQL Server", color: "#9A0C12", icon: "devicon-microsoftsqlserver-plain" },
@@ -111,10 +111,10 @@ const navbar = {
       Max4CarCare: {
         name: "Max4CarCare",
         description: "A fullstack solution to manage appointments and services for Max4Technologies car fleet.",
-        image: "assets/images/Max4CarCare/max4carcare_1.png",
+        image: "src/assets/images/Max4CarCare/max4carcare_1.png",
         images: [
-          "assets/images/Max4CarCare/max4carcare_2.png",
-          "assets/images/Max4CarCare/max4carcare_3.png",
+          "src/assets/images/Max4CarCare/max4carcare_2.png",
+          "src/assets/images/Max4CarCare/max4carcare_3.png",
         ],
         technologies: [
           { name: "Figma", color: "#9A53F5", icon: "devicon-figma-plain" },
@@ -192,11 +192,11 @@ const navbar = {
       ImpresionCreativa: {
         name: "Impresion Creativa",
         description: "Una solución integral para órdenes de trabajo y gestión de inventario para una empresa de impresión.",
-        image: "assets/images/Imp Creativa/imp_creativa1.png",
+        image: "src/assets/images/Imp Creativa/imp_creativa1.png",
         images: [
-          "assets/images/Imp Creativa/imp_creativa2.png",
-          "assets/images/Imp Creativa/imp_creativa3.png",
-          "assets/images/Imp Creativa/imp_creativa4.png"
+          "src/assets/images/Imp Creativa/imp_creativa2.png",
+          "src/assets/images/Imp Creativa/imp_creativa3.png",
+          "src/assets/images/Imp Creativa/imp_creativa4.png"
         ],
         technologies: [
           { name: "Laravel", color: "#F0513F", icon: "devicon-laravel-original" },
@@ -209,11 +209,11 @@ const navbar = {
       Tooltrackup: {
         name: "Tooltrackup",
         description: "Un WMS (Warehouse Management System) fullstack para rastrear herramientas y equipo en laboratorios universitarios.",
-        image: "assets/images/ToolTrackUp/tooltrackup_1.png",
+        image: "src/assets/images/ToolTrackUp/tooltrackup_1.png",
         images: [
-          "assets/images/ToolTrackUp/tooltrackup_2.png",
-          "assets/images/ToolTrackUp/tooltrackup_3.png",
-          "assets/images/ToolTrackUp/tooltrackup_4.png"
+          "src/assets/images/ToolTrackUp/tooltrackup_2.png",
+          "src/assets/images/ToolTrackUp/tooltrackup_3.png",
+          "src/assets/images/ToolTrackUp/tooltrackup_4.png"
         ],
         technologies: [
           { name: "Laravel", color: "#F0513F", icon: "devicon-laravel-original" },
@@ -226,11 +226,11 @@ const navbar = {
       DataWarehouse: {
         name: "Data Bank Texe",
         description: "DataWarehouse para centralizar información de 9 puntos de venta de múltiples marcas, y dashboards personalizados para visualización de datos.",
-        image: "assets/images/Texe/texe_1.png",
+        image: "src/assets/images/Texe/texe_1.png",
         images: [
-          "assets/images/Texe/texe_2.png",
-          "assets/images/Texe/texe_3.png",
-          "assets/images/Texe/texe_4.png"
+          "src/assets/images/Texe/texe_2.png",
+          "src/assets/images/Texe/texe_3.png",
+          "src/assets/images/Texe/texe_4.png"
         ],
         technologies: [
           { name: "SQL Server", color: "#9A0C12", icon: "devicon-microsoftsqlserver-plain" },
@@ -241,10 +241,10 @@ const navbar = {
       Max4CarCare: {
         name: "Max4CarCare",
         description: "Una solución fullstack para gestionar citas y servicios de la flota de autos de Max4Technologies.",
-        image: "assets/images/Max4CarCare/max4carcare_1.png",
+        image: "src/assets/images/Max4CarCare/max4carcare_1.png",
         images: [
-          "assets/images/Max4CarCare/max4carcare_2.png",
-          "assets/images/Max4CarCare/max4carcare_3.png"
+          "src/assets/images/Max4CarCare/max4carcare_2.png",
+          "src/assets/images/Max4CarCare/max4carcare_3.png"
         ],
         technologies: [
           { name: "Figma", color: "#9A53F5", icon: "devicon-figma-plain" },

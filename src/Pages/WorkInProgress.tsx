@@ -16,11 +16,11 @@ export default function WorkInProgress() {
     return (
         <>
             <NavBar onMouseMove={handleMouseMove} selectedLanguage={'en'} toggleLanguage={() => { }} />
-            {/* Cinta de construcción */}
+            {/* Construction Tape */}
             <motion.div
-                className="fixed top-[4.2rem] left-0 w-full h-12 z-50"
+                className="fixed top-[4.1rem] left-0 w-full h-12 z-50"
                 style={{
-                    backgroundImage: 'linear-gradient(45deg, #FFD074 25%, black 25%, black 50%, yellow 50%, yellow 75%, black 75%, black)',
+                    backgroundImage: 'linear-gradient(45deg, #FFD074 25%, black 25%, black 50%, #FFD074 50%, #FFD074 75%, black 75%, black)',
                     backgroundSize: '40px 40px',
                     zIndex: 100, // Asegúrate de que el z-index sea alto
                 }}
@@ -34,22 +34,6 @@ export default function WorkInProgress() {
                 }}
             />
 
-            <motion.div
-                className="fixed bottom-[4.8rem] left-0 w-full h-12 z-50"
-                style={{
-                    backgroundImage: 'linear-gradient(45deg, yellow 25%, black 25%, black 50%, yellow 50%, yellow 75%, black 75%, black)',
-                    backgroundSize: '40px 40px',
-                    zIndex: 100, // Asegúrate de que el z-index sea alto
-                }}
-                animate={{
-                    backgroundPosition: ['0% 0%', '100% 0%'], // Desplazamiento del fondo
-                }}
-                transition={{
-                    repeat: Infinity,
-                    duration: 10,
-                    ease: 'linear',
-                }}
-            />
             <motion.div
                 className="bg-[#0E100F] flex flex-col items-center justify-center w-full min-h-screen h-auto relative overflow-hidden"
                 onMouseMove={handleMouseMove}
@@ -77,8 +61,8 @@ export default function WorkInProgress() {
                         backdropFilter: 'blur(20px) brightness(1)',
                     }}
                 />
-                <div className="z-10 flex flex-col items-center justify-center w-full h-[90vh] text-white space-y-6 font-halcyon bg-red-30">
-                    <h1 className='text-5xl font-halcyon'>Work in Progress</h1>
+                <div className="z-10 flex flex-col items-center justify-center w-full min-h-[calc(100vh-8.4rem)] text-white space-y-6 font-halcyon bg-red-30 px-4">
+                    <h1 className='text-5xl font-halcyon text-center'>Work in Progress</h1>
                     <p className='text-wrap text-center'>This page is currently under construction. Please check back later.</p>
                     {/* Boton de regreso */}
                     <a
@@ -88,6 +72,22 @@ export default function WorkInProgress() {
                         Go back
                     </a>
                 </div>
+                <motion.div
+                    className="relative w-full h-12 z-50"
+                    style={{
+                        backgroundImage: 'linear-gradient(45deg, #FFD074 25%, black 25%, black 50%, #FFD074 50%, #FFD074 75%, black 75%, black)',
+                        backgroundSize: '40px 40px',
+                        zIndex: 100, // Asegúrate de que el z-index sea alto
+                    }}
+                    animate={{
+                        backgroundPosition: ['0% 0%', '100% 0%'], // Desplazamiento del fondo
+                    }}
+                    transition={{
+                        repeat: Infinity,
+                        duration: 10,
+                        ease: 'linear',
+                    }}
+                />
                 <Footer selectedLanguage={'en'} />
             </motion.div>
         </>

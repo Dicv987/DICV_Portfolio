@@ -7,79 +7,79 @@ import "../styles/globals.css";
 const techIcons = [
     // Frontend
     {
-        src: "src/assets/images/icons/React.svg",
+        src: "/assets/images/icons/React.svg",
         alt: "React",
     },
     {
-        src: "src/assets/images/icons/Tailwind CSS.svg",
+        src: "assets/images/icons/Tailwind CSS.svg",
         alt: "Tailwind CSS",
     },
     {
-        src: "src/assets/images/icons/Figma.svg",
+        src: "assets/images/icons/Figma.svg",
         alt: "Figma",
     },
     {
-        src: "src/assets/images/icons/TypeScript.svg",
+        src: "assets/images/icons/TypeScript.svg",
         alt: "TypeScript",
     },
     
     // Backend
     {
-        src: "src/assets/images/icons/Laravel.svg",
+        src: "assets/images/icons/Laravel.svg",
         alt: "Laravel",
     },
     {
-        src: "src/assets/images/icons/PHP.svg",
+        src: "assets/images/icons/PHP.svg",
         alt : "PHP",
     },
     {
-        src: "src/assets/images/icons/Node.js.svg",
+        src: "assets/images/icons/Node.js.svg",
         alt: "Node.js",
     },
     {
-        src: "src/assets/images/icons/Java.svg",
+        src: "assets/images/icons/Java.svg",
         alt: "Java",
     },
     {
-        src: "src/assets/images/icons/Python.svg",
+        src: "assets/images/icons/Python.svg",
         alt: "Python",
     },
     {
-        src: "src/assets/images/icons/C++ (CPlusPlus).svg",
+        src: "assets/images/icons/C++ (CPlusPlus).svg",
         alt: "C++",
     },
     
     // Databases
     {
-        src: "src/assets/images/icons/MySQL.svg",
+        src: "assets/images/icons/MySQL.svg",
         alt: "MySQL",
     },
     {
-        src: "src/assets/images/icons/Microsoft SQL Server.svg",
+        src: "assets/images/icons/Microsoft SQL Server.svg",
         alt: "Microsoft SQL Server",
     },
     {
-        src: "src/assets/images/icons/Firebase.svg",
+        src: "assets/images/icons/Firebase.svg",
         alt: "Firebase",
     },
     
     // DevOps
     {
-        src: "src/assets/images/icons/Git.svg",
+        src: "assets/images/icons/Git.svg",
         alt: "Git",
     },
     {
-        src: "src/assets/images/icons/AWS.svg",
+        src: "assets/images/icons/AWS.svg",
         alt: "AWS",
     },
     {
-        src: "src/assets/images/icons/Heroku.svg",
+        src: "assets/images/icons/Heroku.svg",
         alt: "Heroku",
     },
     
     // Others
     {
-        src: "src/assets/images/icons/OpenCV.svg",
+        src: "assets/images/icons/OpenCV.svg",
         alt: "OpenCV",
     },
 ];

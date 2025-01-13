@@ -38,18 +38,11 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}
         >
-            <a
-                href="https://example.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full"
-            >
-                <img
-                    src={currentImage}
-                    alt={project.name}
-                    className="w-full h-60 object-cover rounded-md mb-5 hover:brightness-80 hover:scale-105 transition-all duration-300 ease-in-out"
-                />
-            </a>
+            <img
+                src={currentImage}
+                alt={project.name}
+                className="w-full h-60 object-cover rounded-md mb-5 hover:brightness-80 hover:scale-105 transition-all duration-300 ease-in-out"
+            />
             <h2 className="text-xl font-semibold hover:text-[#58C4DC] transition-colors duration-300">
                 {project.name}
             </h2>

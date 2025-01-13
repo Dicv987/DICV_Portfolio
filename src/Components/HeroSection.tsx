@@ -1,6 +1,7 @@
 import { Linkedin, Github, Mail, FileText, Instagram, ChevronDown } from 'lucide-react'
-import Me from '../assets/images/me.png'
-//@ts-ignore
+import Me from '../assets/images/me5.jpg'
+
+//@ts-expect-error: JavaScript import of translations is not typed
 import navbar from "../assets/translations/navbar.js"
 
 import CV_en from '../assets/resume/CV-DIEGO CANO Ingles.pdf'
