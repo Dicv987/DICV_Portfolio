@@ -4,8 +4,8 @@ import Me from '../assets/images/me5.jpg'
 //@ts-expect-error: JavaScript import of translations is not typed
 import navbar from "../assets/translations/navbar.js"
 
-import CV_en from '../assets/resume/CV-DIEGO CANO Ingles.pdf'
-import CV_es from '../assets/resume/CV-DIEGO CANO.pdf'
+import CV_en from '../assets/resume/CV_English.pdf'
+import CV_es from '../assets/resume/CV_Spanish.pdf'
 
 interface HeroSectionProps {
     selectedLanguage: 'en' | 'es'
