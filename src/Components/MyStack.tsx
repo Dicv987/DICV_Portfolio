@@ -122,7 +122,7 @@ export default function MyStack({ selectedLanguage }: ProjectsHomeProps) {
 
     return (
         <div
-            id="experience"
+            id="stack"
             className="flex flex-col items-center justify-center w-full h-auto p-6 md:p-12 space-y-4 font-halcyon text-white bg-transparent rounded-lg border-t-2 border-[#FFFFE3]"
         >
 

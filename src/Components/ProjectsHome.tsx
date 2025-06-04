@@ -18,7 +18,7 @@ export default function ProjectsHome({ selectedLanguage }: ProjectsHomeProps) {
     const projects: { [key: string]: { name: string; description: string; image: string; images?: string[]; technologies: { name: string; color: string; icon: string }[] } } = t.projectsData;
     
     return (
-        <div id="experience" className="flex flex-col items-center justify-center w-full h-auto p-6 md:p-12 space-y-8 font-halcyon text-white bg-transparent rounded-lg">
+        <div id="projects" className="flex flex-col items-center justify-center w-full h-auto p-6 md:p-12 space-y-8 font-halcyon text-white bg-transparent rounded-lg">
             {/* Header */}
             <div className="text-4xl md:text-6xl text-[#FFFFE3] font-bold font-Interphases text-center w-full md:w-2/3 lg:w-1/2">
                 {t.projects}
