@@ -136,7 +136,7 @@ export default function ExperienceHome({ selectedLanguage }: ExperienceHomeProps
                             <h3 className="text-lg font-semibold text-white">{t.study1.university}</h3>
                             <p className="text-sm text-gray-400">{t.study1.degree}</p>
                             <ul className="list-disc pl-5 space-y-2 mt-2 hidden md:block">
-                                {t.study1.achievments.map((item: any, index: any) => (
+                                {t.study1.achievements.map((item: any, index: any) => (
                                     <li key={index}>{item}</li>
                                 ))}
                             </ul>
@@ -146,7 +146,7 @@ export default function ExperienceHome({ selectedLanguage }: ExperienceHomeProps
                                     <AccordionTrigger className="text-gray-200 hover:text-[#A374FF] text-md">Achievements</AccordionTrigger>
                                     <AccordionContent>
                                         <ul className="list-disc pl-5 space-y-2 mt-2">
-                                            {t.study1.achievments.map((item: any, index: any) => (
+                                            {t.study1.achievements.map((item: any, index: any) => (
                                                 <li key={index}>{item}</li>
                                             ))}
                                         </ul>
@@ -168,7 +168,7 @@ export default function ExperienceHome({ selectedLanguage }: ExperienceHomeProps
                             <h3 className="text-lg font-semibold text-white">{t.study2.university}</h3>
                             <p className="text-sm text-gray-400">{t.study2.degree}</p>
                             <ul className="list-disc pl-5 space-y-2 mt-2 hidden md:block">
-                                {t.study2.achievments.map((item: any, index: any) => (
+                                {t.study2.achievements.map((item: any, index: any) => (
                                     <li key={index}>{item}</li>
                                 ))}
                             </ul>
@@ -178,7 +178,7 @@ export default function ExperienceHome({ selectedLanguage }: ExperienceHomeProps
                                     <AccordionTrigger className="text-gray-200 hover:text-[#A374FF] text-md">Achievements</AccordionTrigger>
                                     <AccordionContent>
                                         <ul className="list-disc pl-5 space-y-2 mt-2">
-                                            {t.study2.achievments.map((item: any, index: any) => (
+                                            {t.study2.achievements.map((item: any, index: any) => (
                                                 <li key={index}>{item}</li>
                                             ))}
                                         </ul>

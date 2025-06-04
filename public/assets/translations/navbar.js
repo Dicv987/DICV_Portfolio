@@ -42,7 +42,7 @@ const navbar = {
       university: 'Universidad Panamericana',
       degree: 'Bachelor of Artificial Intelligence Engineering',
       period: 'January 2022 - Present',
-      achievments: [
+      achievements: [
         'Won the 2022 Hackathon with a team project that used computer vision to detect sign language and translate it into text and speech',
         'Developed a website and a unity game for the 2023 F1 in Schools competition for the university team',
         'GPA: 8.5/10',
@@ -52,7 +52,7 @@ const navbar = {
       university: 'Tecnológico de Monterrey',
       degree: 'High School Diploma',
       period: 'August 2018 - June 2021',
-      achievments: [
+      achievements: [
         'Member of the ambassador program for the school, representing the institution in various events and activities',
         'Participated in the school’s robotics team',
         'GPA: 8.9/10',
@@ -172,7 +172,7 @@ const navbar = {
       university: 'Universidad Panamericana',
       degree: 'Licenciatura en Ingeniería en Inteligencia Artificial',
       period: 'Enero 2022 - Presente',
-      achievments: [
+      achievements: [
         'Gané el Hackathon 2022 con un proyecto de equipo que utilizaba visión por computadora para detectar lenguaje de señas y traducirlo a texto y voz.',
         'Desarrollé un sitio web y un juego de unity para la competencia F1 in Schools 2023 para el equipo de la universidad.',
         'Promedio: 8.5/10',
@@ -182,7 +182,7 @@ const navbar = {
       university: 'Tecnológico de Monterrey',
       degree: 'Diploma de Preparatoria',
       period: 'Agosto 2018 - Junio 2021',
-      achievments: [
+      achievements: [
         'Miembro del programa de embajadores de la escuela, representando a la institución en varios eventos y actividades.',
         'Participé en el equipo de robótica de la escuela.',
         'Promedio: 8.9/10',
