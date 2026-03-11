@@ -15,7 +15,7 @@ export default function WorkInProgress() {
 
     return (
         <>
-            <NavBar onMouseMove={handleMouseMove} selectedLanguage={'en'} toggleLanguage={() => { }} />
+            <NavBar onMouseMove={handleMouseMove} selectedLanguage={'en'} toggleLanguage={() => { }} theme="dark" toggleTheme={() => { }} />
             {/* Construction Tape */}
             <motion.div
                 className="fixed top-[4.1rem] left-0 w-full h-12 z-50"
