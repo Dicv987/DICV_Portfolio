@@ -5,10 +5,10 @@ import NavBar from '../Components/NavBar'
 import HeroSection from '../Components/HeroSection'
 import ProjectsHome from '../Components/ProjectsHome'
 import ExperienceHome from '../Components/ExperienceHome'
-import MyStack from '@/Components/MyStack.js'
+import MyStack from '@/Components/MyStack'
 //@ts-ignore
 import navbar from "../assets/translations/navbar.js"
-import Footer from '@/Components/Footer.js'
+import Footer from '@/Components/Footer'
 
 export default function HomePage() {
     const [showWelcome, setShowWelcome] = useState(true)
