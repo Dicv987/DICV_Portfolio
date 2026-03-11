@@ -20,22 +20,32 @@ const navbar = {
     workTab: 'Work',
     educationTab: 'Education',
     job1: {
-      company: 'Grupo Texe (Terrazza Italiana)',
-      position: 'Software Developer',
-      period: 'October 2023 - Present',
+      company: 'Alluxi',
+      position: 'Fullstack Software Developer JR',
+      period: 'January 2026 - Present',
       responsibilities: [
-        'Designed and implemented a DataWarehouse solution to centralize data from 9 sales points across multiple brands, enhancing accessibility and reporting accuracy.',
-        'Designed and implemented custom dashboards in Looker Studio and Retool, enhancing data visualization for operational insights; developed attendance tracking software on-site',
-        'Automated daily sales reporting to executives via WhatsApp, streamlining communication and decision-making',
+        'Developing a React Native + Expo mobile app for the IMSS IDSE system, streamlining social security management for companies across Mexico.',
+        'Building a Laravel platform for children\'s math education using the Singapore Method, blending visual learning with structured problem-solving.',
+        'Working in cross-functional agile teams to deliver scalable software solutions for enterprise clients.',
       ],
     },
     job2: {
+      company: 'Grupo Texe (Terrazza Italiana)',
+      position: 'Software Developer',
+      period: 'October 2023 - January 2026',
+      responsibilities: [
+        'Designed and implemented a DataWarehouse solution to centralize data from 9 sales points across multiple brands, enhancing accessibility and reporting accuracy.',
+        'Designed and implemented custom dashboards in Looker Studio and Retool, enhancing data visualization for operational insights; developed attendance tracking software on-site.',
+        'Automated daily sales reporting to executives via WhatsApp, streamlining communication and decision-making.',
+      ],
+    },
+    job3: {
       company: 'Max4Technologies',
       position: 'Intern Developer',
       period: 'January 2023 - October 2023',
       responsibilities: [
-        'Built responsive static websites in React for multiple clients, optimizing user experience and brand presence',
-        'Developed and launched a mobile app in React Native and Laravel for internal scheduling of mechanic appointments, enhancing operational efficiency',
+        'Built responsive static websites in React for multiple clients, optimizing user experience and brand presence.',
+        'Developed and launched a mobile app in React Native and Laravel for internal scheduling of mechanic appointments, enhancing operational efficiency.',
       ],
     },
     study1: {
@@ -150,16 +160,26 @@ const navbar = {
     workTab: 'Trabajo',
     educationTab: 'Educación',
     job1: {
+      company: 'Alluxi',
+      position: 'Desarrollador de Software Fullstack JR',
+      period: 'Enero 2026 - Presente',
+      responsibilities: [
+        'Desarrollando una app móvil en React Native + Expo para el sistema IDSE del IMSS, modernizando la gestión de seguridad social para empresas en México.',
+        'Construyendo una plataforma web en Laravel para enseñanza de matemáticas infantiles con el Método Singapur, combinando aprendizaje visual y resolución estructurada de problemas.',
+        'Colaborando en equipos ágiles multifuncionales para entregar soluciones de software escalables a clientes empresariales.',
+      ],
+    },
+    job2: {
       company: 'Grupo Texe (Terrazza Italiana)',
       position: 'Desarrollador de Software',
-      period: 'Octubre 2023 - Presente',
+      period: 'Octubre 2023 - Enero 2026',
       responsibilities: [
         'Diseñé e implementé una solución de DataWarehouse para centralizar datos de 9 puntos de venta de varias marcas, mejorando la accesibilidad y la precisión de los reportes.',
         'Diseñé e implementé dashboards personalizados en Looker Studio y Retool, optimizando la visualización de datos para análisis operativo; desarrollé software de asistencia en sitio.',
         'Automatización de reportes diarios de ventas a ejecutivos vía WhatsApp, facilitando la comunicación y la toma de decisiones.',
       ],
     },
-    job2: {
+    job3: {
       company: 'Max4Technologies',
       position: 'Desarrollador Interno',
       period: 'Enero 2023 - Octubre 2023',

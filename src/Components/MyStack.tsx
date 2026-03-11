@@ -123,14 +123,14 @@ export default function MyStack({ selectedLanguage }: ProjectsHomeProps) {
     return (
         <div
             id="experience"
-            className="flex flex-col items-center justify-center w-full h-auto p-6 md:p-12 space-y-4 font-halcyon text-white bg-transparent rounded-lg border-t-2 border-[#FFFFE3]"
+            className="flex flex-col items-center justify-center w-full h-auto p-6 md:p-12 space-y-4 font-halcyon text-[#0E100F] dark:text-white bg-transparent rounded-lg border-t-2 border-[#0E100F]/30 dark:border-[#FFFFE3]"
         >
 
-            <div className="text-4xl md:text-6xl bg-transparent text-[#FFFFE3] font-bold font-Interphases text-center w-full md:w-2/3 lg:w-1/2">
+            <div className="text-4xl md:text-6xl bg-transparent text-[#0E100F] dark:text-[#FFFFE3] font-bold font-Interphases text-center w-full md:w-2/3 lg:w-1/2">
                 {t.myStack}
             </div>
 
-            <div className="text-2xl md:text-3xl text-wrap text-white text-center w-full md:w-2/3 lg:w-1/2">
+            <div className="text-2xl md:text-3xl text-wrap text-[#0E100F] dark:text-white text-center w-full md:w-2/3 lg:w-1/2">
                 {t.myStackDescription.split(" ").map((word: string, index: number) => (
                     <span
                         key={index}
@@ -139,7 +139,7 @@ export default function MyStack({ selectedLanguage }: ProjectsHomeProps) {
                                 word === "tecnologías" ||
                                 word === "carrera" ||
                                 word === "career"
-                                ? "text-[#FFD074]"
+                                ? "text-[#C47B00] dark:text-[#FFD074]"
                                 : ""
                         }
                     >
@@ -153,7 +153,7 @@ export default function MyStack({ selectedLanguage }: ProjectsHomeProps) {
                     {techIcons.map((icon, index) => (
                         <div key={index} className="flex flex-col items-center">
                             <img src={icon.src} alt={icon.alt} />
-                            <span className="mt-2 text-white bg-gray-800 rounded-full px-2 py-1 text-sm">
+                            <span className="mt-2 text-[#0E100F] dark:text-white bg-[#0E100F]/10 dark:bg-gray-800 rounded-full px-2 py-1 text-sm">
                                 {icon.alt}
                             </span>
                         </div>

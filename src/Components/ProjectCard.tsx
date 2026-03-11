@@ -34,7 +34,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 
     return (
         <div
-            className="flex flex-col items-start h-[500px] lg:h-auto justify-center bg-gray-800/40 rounded-lg p-5 shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out"
+            className="flex flex-col items-start h-[500px] lg:h-auto justify-center bg-white dark:bg-gray-800/40 rounded-lg p-5 shadow-md dark:shadow-none hover:shadow-xl transition-all duration-300 ease-in-out border border-[#0E100F]/8 dark:border-transparent"
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}
         >
@@ -46,14 +46,14 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             <h2 className="text-xl font-semibold hover:text-[#58C4DC] transition-colors duration-300">
                 {project.name}
             </h2>
-            <p className="text-sm text-gray-400 mb-4 hover:text-gray-300 transition-colors duration-300">
+            <p className="text-sm text-gray-500 dark:text-gray-400 mb-4 hover:text-gray-700 dark:hover:text-gray-300 transition-colors duration-300">
                 {project.description}
             </p>
             <div className="flex flex-wrap gap-2 mb-10 md:mb-0">
                 {project.technologies.map((tech, index) => (
                     <span
                         key={index}
-                        className="text-base px-3 pt-1 rounded-full flex items-center justify-center space-x-1 flex-row hover:scale-110 transition-transform duration-300 ease-in-out "
+                        className="text-base px-3 pt-1 rounded-full flex items-center justify-center space-x-1 flex-row hover:scale-110 transition-transform duration-300 ease-in-out text-white"
                         style={{ backgroundColor: tech.color }}
                     >
                         <i className={tech.icon}></i>

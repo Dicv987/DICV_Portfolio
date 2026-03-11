@@ -25,7 +25,7 @@ export default function Footer({ selectedLanguage }: FooterProps) {
     const t = navbar[validLanguage]
 
     return (
-        <footer className="w-full px-4 py-6 bg-gray-300/10 text-white backdrop-blur-md border-t border-gray-200/10">
+        <footer className="w-full px-4 py-6 bg-[#0E100F]/8 dark:bg-gray-300/10 text-[#0E100F] dark:text-white backdrop-blur-md border-t border-[#0E100F]/20 dark:border-gray-200/10">
             <div className="max-w-6xl mx-auto">
                 <div className="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
                     {/* Logo and copyright */}

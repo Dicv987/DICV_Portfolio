@@ -44,7 +44,7 @@ export default function WelcomeAnimation({
                 duration: 1,
                 ease: 'easeInOut',
             }}
-            className="bg-[#0E100F] flex items-center justify-center w-full h-[100vh] absolute top-0 left-0"
+            className="bg-[#0E100F] flex items-center justify-center w-full h-[100vh] fixed top-0 left-0 z-50"
         >
             <motion.div
                 initial="hidden"

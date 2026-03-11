@@ -14,11 +14,25 @@ export default function HomePage() {
     const [showWelcome, setShowWelcome] = useState(true)
     const [mousePosition, setMousePosition] = useState({ x: window.innerWidth / 2, y: window.innerHeight / 2 })
     const [selectedLanguage, setSelectedLanguage] = useState<'en' | 'es'>('en')
+    const [theme, setTheme] = useState<'dark' | 'light'>(() => (localStorage.getItem('theme') as 'dark' | 'light') || 'dark')
     const customGreetings = ['Hello', 'Bonjour', 'Ciào', 'Olá', '你好', '안녕하세요', 'وعليكم السلام']
 
     const toggleLanguage = useCallback(() => {
         setSelectedLanguage((prev) => (prev === 'en' ? 'es' : 'en'))
     }, [])
+
+    const toggleTheme = useCallback(() => {
+        setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'))
+    }, [])
+
+    useEffect(() => {
+        if (theme === 'dark') {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+        localStorage.setItem('theme', theme)
+    }, [theme])
 
     const handleMouseMove = useCallback((e: { pageX: number; pageY: number }) => {
         setMousePosition({
@@ -42,6 +56,8 @@ export default function HomePage() {
         }
     }, [handleScroll])
 
+    const handleAnimationEnd = useCallback(() => setShowWelcome(false), [])
+
     return (
         <>
             {showWelcome && (
@@ -49,14 +65,14 @@ export default function HomePage() {
                     <WelcomeAnimation
                         duration={1000}
                         greetings={customGreetings}
-                        onAnimationEnd={() => setShowWelcome(false)}
+                        onAnimationEnd={handleAnimationEnd}
                     />
                 </div>
             )}
-            <NavBar onMouseMove={handleMouseMove} selectedLanguage={selectedLanguage} toggleLanguage={toggleLanguage} />
+            <NavBar onMouseMove={handleMouseMove} selectedLanguage={selectedLanguage} toggleLanguage={toggleLanguage} theme={theme} toggleTheme={toggleTheme} />
 
             <motion.div
-                className="bg-[#0E100F] flex flex-col items-center justify-center w-full min-h-screen h-auto relative overflow-hidden"
+                className="bg-[#FFFFE3] dark:bg-[#0E100F] flex flex-col items-center justify-center w-full min-h-screen h-auto relative overflow-hidden"
                 onMouseMove={handleMouseMove}
             >
                 <motion.div
@@ -64,7 +80,9 @@ export default function HomePage() {
                     style={{
                         width: '900px',
                         height: '900px',
-                        background: 'radial-gradient(circle, rgba(255, 208, 116, 0.2) 0%, rgba(255, 208, 116, 0) 70%)',
+                        background: theme === 'dark'
+                            ? 'radial-gradient(circle, rgba(255, 208, 116, 0.2) 0%, rgba(255, 208, 116, 0) 70%)'
+                            : 'radial-gradient(circle, rgba(163, 116, 255, 0.4) 0%, rgba(163, 116, 255, 0) 65%)',
                     }}
                     animate={{
                         top: mousePosition.y - 400,

@@ -25,20 +25,26 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #0E100F;
-  /* Color de fondo del track de la barra */
+  background: var(--scrollbar-track);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #FFD074;
-  /* Color del scroll (morado claro en este caso) */
+  background-color: var(--scrollbar-thumb);
   border-radius: 10px;
-  /* Bordes redondeados */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #FFD074;
-  /* Cambia el color al pasar el mouse */
+  background-color: var(--scrollbar-thumb);
+}
+
+html.dark {
+  --scrollbar-track: #0E100F;
+  --scrollbar-thumb: #FFD074;
+}
+
+html:not(.dark) {
+  --scrollbar-track: #FFFFE3;
+  --scrollbar-thumb: #0E100F;
 }
 
 @keyframes bounceInWithFade {
